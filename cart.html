@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <style>
+        /* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+            padding: 0px;
+            box-sizing: border-box;
+            margin: auto;
+            width: 100%;
+            height: 1200px;
+            background-color: rgb(194, 203, 203);
+        }
+        .bg{
+            width: 1350px;
+            height: 615px;
+            /* background-image:url("cartbackground.jpg"); */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .title{
+            text-align: center;
+            padding-top: 200px;
+            color:white;
+        }
+        .heading{
+            font-size: 70px;
+        }
+        .content{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:maroon;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #1a1717;
+}
+.footer1{
+            background-color: #b92929;
+            width: 1350px;
+            height: 250px;
+            display: flex;
+        }
+        .last-1{
+            width: 450px;
+            /* background-color: aqua; */
+            padding-left: 150px;
+            padding-top: 50px;
+            color: rgb(208, 199, 199);
+        }
+        .last-1 p{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        .last-1 h4{
+            font-size: 18px;
+        }.sub{
+            height: 30px;
+            width: 120px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #fff;
+            border: 2px solid rgb(46, 44, 44);
+            border-radius: 10px;
+        }
+        .sub:hover{
+            background-color: #9b0707;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .sub-button{
+            padding-left: 60px;
+            
+        }
+        .footer2{
+            height: 150px;
+            background-color: #741616;
+            text-align: center;
+            color: #fff;
+        }
+        .footer2 h2{
+            font-size: 20px;
+        }
+        .icons{
+            height: 55px;
+            width: 1350px;
+            /* background-color: aqua; */
+        }
+        .icons img{
+            height: 40px;
+            width: 40px;
+        }
+        .heading{
+    width: 100%;
+    height: 250px;
+    /* background-color: rgb(17, 109, 109); */
+    background-image: url("9.jpeg");
+    background-size: 1350px 140%;
+    background-repeat: no-repeat;
+}
+.cart-title{
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-left: -50px;
+    
+}
+.cart-body{
+    height: 800px;
+    padding-left: 100px ;
+    width: 700px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.cart-container{
+    padding-left: 350px;
+}
+.clear-btn{
+    height: 30px;
+    width: 100px;
+    position: relative;
+    left: -50px;
+    /* background-color: #b92929; */
+    background-color: #34d33b;
+    color: #fff;
+    border-radius: 15px;
+}
+.back-btn{
+    height: 30px;
+    width: 100px;
+    background-color: #b92929;
+    color: #fff;
+    position: relative;
+    left: -50px;
+    border-radius: 15px;
+}
+.order-btn{
+    position: relative;
+    right: -280px;
+    bottom: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #ff531a;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.Email{
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    top: -30px;
+    left: 250px;
+    height: 30px;
+}
+input::placeholder {
+    text-align: center;
+}
+.verticalspace{
+    padding-top: 50px;
+}
+.btn-padding{
+    padding-right: 50px;
+}
+a{
+            text-decoration: none;
+            color: rgb(208, 201, 201);
+        }
+        .email{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address-value{
+            padding-left: 80px;
+            position: relative;
+            top: -30px;
+        }
+        .phone{
+            font-weight: bold;
+            padding-right: 30px;
+            
+        }
+               /* drop down menu */
+        /* Add this CSS to style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding-right: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1; /* Ensure dropdown is on top of other elements */
+}
+
+.dropdown-content span,
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dropdown-content span:first-child {
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #453e3e;
+    color: #e7e2e2;
+    
+}
+.dropdown-content img{
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RKV Foodie</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <!-- Add a dropdown menu for user details -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">User Details</a>
+                    <div class="dropdown-content">
+                        <p style="padding-left: 25px;">Welcome <?php echo $_SESSION['username']; ?></p> 
+                        <?php echo $_SESSION['username']; ?>
+                        <img src="user.png" alt="">
+                        <!-- Assuming $username contains the user's name -->
+                        <p style="text-align: center; width: 120px;"><a href="logout.php">Logout</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="heading">
+        <h1 class="cart-title">Cart</h1>
+    </div>
+        
+        <br><br><br>
+    <div class="cart-container">
+        <div class="cart-body">
+            <div id="cart-space"></div>
+            <div id="cart-items"></div>
+            <h2 id="total-amount"></h2>
+            <p class="verticalspace"></p>
+            <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+            <span class="btn-padding"></span>
+            <a href="Menu.html"><button class="back-btn">Back to Menu</button></a>
+            <span class="btn-padding"></span>
+            <!-- <button class="order-btn" onclick="placeOrder()">Place Order</button> -->
+            <form id="cartForm" action="place_order.php" method="POST" onsubmit="return placeOrder()">
+                <input class="Email"type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="hidden" name="cart" id="cartInput">
+                <button  class="order-btn"type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    
+
+    <footer>
+        <div class="footer1">
+            <div class="last-1">
+                <h4>Our Pages</h4>
+                <a href="Home.html"><p>home</p></a>
+                <a href="Menu.html"><p>menu</p></a>
+                <a href="cart.html"><p>cart</p></a>
+                <a href="contact.html"><p>contact us</p></a>
+                <a href="booktable.html"><p>canteen dining</p></a>
+
+            </div>
+            <div class="last-1">
+                <h4>Exclusive Offers</h4>
+                <p>Foodie Discounts</p>
+                <p>Special-Event-Packages</p>
+                <p>Membership Benefits</p>
+                <p>Early Access to new Recipes</p>
+            </div>
+            <div class=" last-1 last-3">
+                <h3>Contact Us!</h3><br>
+                <span class="email">Email</span>
+                <span class="email-address">rkv@foodie.com</span><br><br>
+                <span class="phone">Phone</span>
+                <span class="phone-number">8688467417</span><br><br>
+                <span class="address">Address</span>
+                <p class="address-value"> <br>Rkv canteen <br> near SuperMarket <br>Quarters road <br>Idupulapaya <br>516330.</p>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <br>
+            <h2>Follow Us</h2><br>
+            <div class="icons">
+                <span><img src="Insta.jpeg" alt=""></span>
+                <span><img src="facebook.png" alt=""></span>
+                <span><img src="twitter.png" alt="">
+                </span>
+            </div>
+            <p style="font-size: 14px;">Stay connected with us on social media for the latest updates, recipes, and foodie adventures.</p>
+        </div>
+    </footer>
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItemsDiv = document.getElementById('cart-items');
+            let totalAmountDiv = document.getElementById('total-amount');
+            let spaceDiv = document.getElementById('cart-space');
+            spaceDiv.innerHTML = '';
+            cartItemsDiv.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartItemsDiv.innerHTML = '<p style="font-size:30px;">Cart is Empty</p>';
+                totalAmountDiv.innerHTML = '';
+                return;
+            }
+
+            let totalAmount = 0;
+            spaceDiv.innerHTML = '<br><br><br><br>';
+            cart.forEach((item, index) => {
+                totalAmount += item.price * item.quantity;
+                cartItemsDiv.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name} - ₹${item.price} x ${item.quantity}</span>
+                        <button style="height: 30px; width: 100px; background-color: #34d33b; color: #fff; font-weight: bold; border-radius: 15px;" onclick="removeFromCart(${index})">Remove</button>
+                    </div>
+                `;
+            });
+
+            totalAmountDiv.innerHTML = `<br>Total Amount: ₹${totalAmount}`;
+        }
+
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        function clearCart() {
+            localStorage.removeItem('cart');
+            loadCart();
+        }
+
+        function placeOrder() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            if (cart.length === 0) {
+                alert("Your cart is empty!");
+                return false;
+            }
+            document.getElementById('cartInput').value = JSON.stringify(cart);
+            localStorage.removeItem('cart');
+            alert("Order Placed successfully! Thank you, Visit Again....");
+            clearCart();
+            return true;
+        }
+
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

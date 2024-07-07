@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+#menu {
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.food-item {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#cart {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div id="menu">
+        <div class="category" id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="food-item">
+                <p>Spring Rolls - $5</p>
+                <button onclick="addToCart('Spring Rolls', 5)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <p>Garlic Bread - $4</p>
+                <button onclick="addToCart('Garlic Bread', 4)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="category" id="mains">
+            <h2>Main Courses</h2>
+            <div class="food-item">
+                <p>Grilled Chicken - $12</p>
+                <button onclick="addToCart('Grilled Chicken', 12)">Add to Cart</button>
+            </div>
+            <div class="food-item">
+                <p>Spaghetti Carbonara - $10</p>
+                <button onclick="addToCart('Spaghetti Carbonara', 10)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more categories and items as needed -->
+    </div>
+
+    <h2>Cart</h2>
+    <div id="cart">
+        <ul id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+    <script>
+        let cart = [];
+        let total = 0;
+    
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            total += price;
+            updateCart();
+        }
+    
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            cart.forEach(cartItem => {
+                const li = document.createElement('li');
+                li.textContent = `${cartItem.item} - $${cartItem.price}`;
+                cartItems.appendChild(li);
+            });
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+    </script>
+    
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>
+

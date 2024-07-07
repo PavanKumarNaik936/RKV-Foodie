@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        /* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:maroon;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #1a1717;
+}
+body{
+        padding: 0px;
+        box-sizing: border-box;
+        margin: auto;
+        width: 100%;
+        height: 800px;
+        background-color: rgb(194, 203, 203);
+        
+}
+.footer1{
+            background-color: #b92929;
+            width: 1350px;
+            height: 250px;
+            display: flex;
+        }
+        .last-1{
+            width: 450px;
+            /* background-color: aqua; */
+            padding-left: 150px;
+            padding-top: 50px;
+            color: rgb(208, 199, 199);
+        }
+        .last-1 p{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        .last-1 h4{
+            font-size: 18px;
+        }.sub{
+            height: 30px;
+            width: 120px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #fff;
+            border: 2px solid rgb(46, 44, 44);
+            border-radius: 10px;
+        }
+        .sub:hover{
+            background-color: #9b0707;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .sub-button{
+            padding-left: 60px;
+            
+        }
+        .footer2{
+            height: 150px;
+            background-color: #741616;
+            text-align: center;
+            color: #fff;
+        }
+        .footer2 h2{
+            font-size: 20px;
+        }
+       
+        .icons{
+            height: 55px;
+            width: 1350px;
+            /* background-color: aqua; */
+        }
+        .icons img{
+            height: 40px;
+            width: 40px;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red  ; */
+    font-family: 'Poppins',sans-serif;
+}
+.body{
+    padding-top: 100px;
+    padding-left: 300px;
+    /* display: flex; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("contactus.png");
+    background-repeat: no-repeat;
+    background-size: 1350px 700px;
+    /* background: linear-gradient(135deg,#719ee6,#b659ae); */
+
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 550;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#719ee6,#b659ae);
+}
+
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    font-weight:510;
+    margin-bottom: 5px;
+}
+.user-details .input-box input,textarea{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #b659ae;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+height: 100%;
+width: 100%;
+outline: none;
+color: #fff;
+border: none;
+font-size: 18px;
+font-weight: 500;
+border-radius: 5px;
+letter-spacing: 1.5px;
+background: linear-gradient(135deg,#719ee6,#b659ae);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#719ee6,#b659ae);
+}
+a{
+            text-decoration: none;
+            color: rgb(208, 201, 201);
+        }
+        .email{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address-value{
+            padding-left: 80px;
+            position: relative;
+            top: -30px;
+        }
+        .phone{
+            font-weight: bold;
+            padding-right: 30px;
+            
+        }
+               /* drop down menu */
+        /* Add this CSS to style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding-right: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1; /* Ensure dropdown is on top of other elements */
+}
+
+.dropdown-content span,
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dropdown-content span:first-child {
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #453e3e;
+    color: #e7e2e2;
+    
+}
+.dropdown-content img{
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RKV Foodie</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <!-- Add a dropdown menu for user details -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">User Details</a>
+                    <div class="dropdown-content">
+                        <p style="padding-left: 25px;">Welcome <?php echo $_SESSION['username']; ?></p> 
+                        <?php echo $_SESSION['username']; ?>
+                        <img src="user.png" alt="">
+                        <!-- Assuming $username contains the user's name -->
+                        <p style="text-align: center; width: 120px;"><a href="logout.php">Logout</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body">
+        <div class="container">
+            <div class="title">Contact Us</div>
+            <form  id="contactForm" action="ContactUs.php" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Message</span>
+                        <textarea name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+</div>
+    <footer>
+        <div class="footer1">
+            <div class="last-1">
+                <h4>Our Pages</h4>
+                <a href="Home.html"><p>home</p></a>
+                <a href="Menu.html"><p>menu</p></a>
+                <a href="cart.html"><p>cart</p></a>
+                <a href="contact.html"><p>contact us</p></a>
+                <a href="booktable.html"><p>canteen dining</p></a>
+
+            </div>
+            <div class="last-1">
+                <h4>Exclusive Offers</h4>
+                <p>Foodie Discounts</p>
+                <p>Special-Event-Packages</p>
+                <p>Membership Benefits</p>
+                <p>Early Access to new Recipes</p>
+            </div>
+            <div class=" last-1 last-3">
+                <h3>Contact Us!</h3><br>
+                <span class="email">Email</span>
+                <span class="email-address">rkv@foodie.com</span><br><br>
+                <span class="phone">Phone</span>
+                <span class="phone-number">8688467417</span><br><br>
+                <span class="address">Address</span>
+                <p class="address-value"> <br>Rkv canteen <br> near SuperMarket <br>Quarters road <br>Idupulapaya <br>516330.</p>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <br>
+            <h2>Follow Us</h2><br>
+            <div class="icons">
+                <span><img src="Insta.jpeg" alt=""></span>
+                <span><img src="facebook.png" alt=""></span>
+                <span><img src="twitter.png" alt="">
+                </span>
+            </div>
+            <p style="font-size: 14px;">Stay connected with us on social media for the latest updates, recipes, and foodie adventures.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            this.submit();
+            location.reload();
+            
+        });
+    </script>
+
+    
+</body>
+</html>

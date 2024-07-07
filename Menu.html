@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        /* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:maroon;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #1a1717;
+}
+body{
+        
+        padding: 0px;
+        box-sizing: border-box;
+        margin: auto;
+        width: 100%;
+        height: 3500px;
+        background-color: rgb(248, 241, 241);
+}
+.menu{
+    width: 100%;
+    height: 250px;
+    /* background-color: aqua; */
+    background-image: url("9.jpeg");
+    background-size: 1350px 200%;
+    background-repeat: no-repeat;
+}
+.menu h1{
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    padding-top: 100px;
+}
+.breakfast{
+    position: relative;
+    left: 100px;
+    right: 100px;
+    height: 600px;
+    width: 1150px;
+    /* background-color: aqua; */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.breakfast-heading{
+    color: #a30505;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.meals-heading{
+    color: #a30505;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.breakfast div{
+    height: 300px;
+    width: 270px;
+    /* background-color: rgb(77, 135, 135); */
+}
+.meals{
+    position: relative;
+    left: 100px;
+    right: 100px;
+    height: 300px;
+    width: 1150px;
+    /* background-color: aqua; */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fastfood{
+    position: relative;
+    left: 100px;
+    right: 100px;
+    height: 300px;
+    width: 1150px;
+    /* background-color: aqua; */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.meals div{
+    height: 300px;
+    width: 270px;
+    /* background-color: rgb(77, 135, 135); */
+}
+.fastfood-heading{
+    color: #a30505;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.fastfood div{
+    height: 300px;
+    width: 220px;
+    /* background-color: rgb(77, 135, 135); */
+}
+.snacks{
+    position: relative;
+    left: 100px;
+    right: 100px;
+    height: 600px;
+    width: 1150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.snacks div{
+    height: 300px;
+    width: 220px;
+    /* background-color: rgb(77, 135, 135); */
+}
+.snacks-heading{
+    color: #a30505;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.cooldrinks-heading{
+    color: #a30505;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.cooldrinks{
+    position: relative;
+    left: 100px;
+    right: 100px;
+    height: 800px;
+    width: 1150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cooldrinks div{
+    height: 350px;
+    width: 340px;
+    /* background-color: rgb(77, 135, 135); */
+}
+.footer1{
+            background-color: #b92929;
+            width: 1350px;
+            height: 250px;
+            display: flex;
+        }
+        .last-1{
+            width: 450px;
+            /* background-color: aqua; */
+            padding-left: 150px;
+            padding-top: 50px;
+            color: rgb(208, 199, 199);
+        }
+        .last-1 p{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        .last-1 h4{
+            font-size: 18px;
+        }.sub{
+            height: 30px;
+            width: 120px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #fff;
+            border: 2px solid rgb(46, 44, 44);
+            border-radius: 10px;
+        }
+        .sub:hover{
+            background-color: #9b0707;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .sub-button{
+            padding-left: 60px;
+            
+        }
+        .footer2{
+            height: 150px;
+            background-color: #741616;
+            text-align: center;
+            color: #fff;
+        }
+        .footer2 h2{
+            font-size: 20px;
+        }
+        .icons{
+            height: 55px;
+            width: 1350px;
+            /* background-color: aqua; */
+        }
+        .icons img{
+            height: 40px;
+            width: 40px;
+        }
+        img{
+            height: 220px;
+            width: 270px;
+            border-radius: 15px;
+            transition: transform 0.5s ease-out;
+        }
+        img:hover{
+            transform: scale(1.04);
+        }
+        .price{
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        .fooditem p{
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .cart-button{
+            padding-left: 30px;
+            
+        } 
+        .breakfast .cart-button{
+            padding-left: 100px;
+        }
+        .meals .cart-button{
+            padding-left: 90px;
+        }
+        .cooldrinks .cart-button{
+            padding-left: 150px;
+        }
+        .cart-button button{
+            
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            background-color: #b72222;
+            font-size: 18px;
+            color: #fff;
+        }
+        .fastfood img{
+            height: 200px;
+            width: 220px;
+            border-radius: 15px;
+            transition: transform 0.5s ease-out;
+        }
+        .snacks img{
+            height: 200px;
+            width: 220px;
+            border-radius: 15px;
+            transition: transform 0.5s ease-out;
+        }
+        .cooldrinks img{
+            height: 270px;
+            width: 340px;
+            border-radius: 15px;
+            transition: transform 0.5s ease-out;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(208, 201, 201);
+        }
+        .email{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address-value{
+            padding-left: 80px;
+            position: relative;
+            top: -30px;
+        }
+        .phone{
+            font-weight: bold;
+            padding-right: 30px;
+            
+        }
+               /* drop down menu */
+        /* Add this CSS to style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding-right: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1; /* Ensure dropdown is on top of other elements */
+}
+
+.dropdown-content span,
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dropdown-content span:first-child {
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #453e3e;
+    color: #e7e2e2;
+    
+}
+.dropdown-content img{
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+        
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RKV Foodie</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <!-- Add a dropdown menu for user details -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">User Details</a>
+                    <div class="dropdown-content">
+                        <p style="padding-left: 25px;">Welcome <?php echo $_SESSION['username']; ?></p> 
+                        <?php echo $_SESSION['username']; ?>
+                        <img src="user.png" alt="">
+                        <!-- Assuming $username contains the user's name -->
+                        <p style="text-align: center; width: 120px;"><a href="logout.php">Logout</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu">
+        <h1>MENU</h1>
+    </div><br><br><br><br>
+    <h2 class="breakfast-heading">BREAK FAST</h2>
+    <div class="breakfast">
+        <div class="1 fooditem">
+            <img src="idli.jpeg" alt="">
+            <p>IDLI</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('IDLI', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="dosa.jpeg" alt="">
+            <p>DOSA</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('DOSA', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="poori.jpeg" alt="">
+            <p>POORI</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('POORI', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="vada.jpeg" alt="">
+            <p>VADA</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('VADA', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="parota.jpeg" alt="">
+            <p>PAROTA</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('PAROTA', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="roti.jpeg" alt="">
+            <p>ROTI</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('ROTI', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="upma.jpeg" alt="">
+            <p>UPMA</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('UPMA', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="pongal.jpeg" alt="">
+            <p>PONGALI</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('PONGALI', 30)">Add to cart</button></span>
+        </div>
+        
+    </div>
+    <h2 class="meals-heading">MEALS</h2>
+    <div class="meals">
+        <div class="1 fooditem">
+            <img src="dalrice.jpeg" alt="">
+            <p>Dal rice</p>
+            <span class="price"> ₹60</span>
+            <span class="cart-button"><button onclick="addToCart('DAL RICE', 60)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="curdrice.jpeg" alt="">
+            <p>Curd rice</p>
+            <span class="price"> ₹50</span>
+            <span class="cart-button"><button onclick="addToCart('CURD RICE', 50)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="biryani.jpeg" alt="">
+            <p>Biryani</p>
+            <span class="price"> ₹150</span>
+            <span class="cart-button"><button onclick="addToCart('BIRYANI', 150)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="roti-with-chicken.jpg" alt="">
+            <p>Roti & chicken curry</p>
+            <span class="price"> ₹120</span>
+            <span class="cart-button"><button onclick="addToCart('ROTI & CHICKEN CURRY', 120)">Add to cart</button></span>
+        </div>
+        
+    </div>
+    <h2 class="fastfood-heading">FAST FOODS</h2>
+    <div class="fastfood">
+        <div class="1 fooditem">
+            <img src="Chickenrice.jpeg" alt="">
+            <p>Chicken Rice</p>
+            <span class="price"> ₹50</span>
+            <span class="cart-button"><button onclick="addToCart('CHICKEN RICE', 50)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="gobiricejpeg" alt="">
+            <p>Gobi rice</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('GOBI RICE', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="vegnoodles.jpeg" alt="">
+            <p>Veg Noodles</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('VEG NOODLES', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="eggrice.jpeg" alt="">
+            <p>Egg Rice</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('EGG RICE', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="Chickennoodles.jpeg" alt="">
+            <p>Chicken Noodles</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('CHICKEN NOODLES', 40)">Add to cart</button></span>
+        </div>
+        
+    </div>
+    <br><br>
+    <h1 class="snacks-heading">SNACKS & BAKERY FOODS</h1>
+    <div class="snacks">
+        <div class="1 fooditem">
+            <img src="butterscotchcake.jpeg" alt="">
+            <p>Butter Scotch Cake</p>
+            <span class="price">₹349</span>
+            <span class="cart-button"><button onclick="addToCart('BUTTER SCOTCH CAKE', 349)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="vanillacake.jpeg" alt="">
+            <p>Vanilla Strawberry Cake</p>
+            <span class="price">₹349</span>
+            <span class="cart-button"><button onclick="addToCart('VANILLA STRABERRY CAKE',349)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="honeycake.jpeg" alt="">
+            <p>Honey Cake</p>
+            <span class="price"> ₹379</span>
+            <span class="cart-button"><button onclick="addToCart('HONEY CAKE', 379)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="chocolate.jpeg" alt="">
+            <p>Chocolate Cake</p>
+            <span class="price"> ₹349</span>
+            <span class="cart-button"><button onclick="addToCart('CHOCOLATE CAKE', 349)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="breadandjam.jpeg" alt="">
+            <p>Bread & Jam</p>
+            <span class="price"> ₹50</span>
+            <span class="cart-button"><button onclick="addToCart('BREAD & JAM', 50)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="dilkush.jpeg" alt="">
+            <p>Dilkush</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('DILKUSH', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="dilpasand.jpeg" alt="">
+            <p>Dilpasand</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('DILPASAND', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="panipoori.jpeg" alt="">
+            <p>Pani Poori</p>
+            <span class="price"> ₹30</span>
+            <span class="cart-button"><button onclick="addToCart('PANI POORI', 30)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="mysore bonda.jpeg" alt="">
+            <p>Mysore Bonda</p>
+            <span class="price"> ₹20</span>
+            <span class="cart-button"><button onclick="addToCart('MYSORE BONDA', 20)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="mirapakaybhajji.jpeg" alt="">
+            <p>Mirapakaybhajj</p>
+            <span class="price"> ₹20</span>
+            <span class="cart-button"><button onclick="addToCart('MIRAPAKAYBHAJJI', 20)">Add to cart</button></span>
+        </div>
+    </div>
+    <br><br>
+    <h1 class="cooldrinks-heading">COOL DRINKS</h1>
+    <div class="cooldrinks">
+        <div class="1 fooditem">
+            <img src="cocacola.jpeg" alt="">
+            <p>Coca Cola</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('COCA COLA', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="sprite.jpeg" alt="">
+            <p>Sprite</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('SPRITE', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="mirinda.jpeg" alt="">
+            <p>Mirinda</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('MIRINDA', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="pepsi.jpeg" alt="">
+            <p>Pepsi</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('PEPSI', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="thumbsup.jpeg" alt="">
+            <p>Thumbs Up</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('THUMBS UP', 40)">Add to cart</button></span>
+        </div>
+        <div class="1 fooditem">
+            <img src="pulpyorange.jpeg" alt="">
+            <p>Puly Orange</p>
+            <span class="price"> ₹40</span>
+            <span class="cart-button"><button onclick="addToCart('PULPY ORANGE', 40)">Add to cart</button></span>
+        </div>
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="last-1">
+                <h4>Our Pages</h4>
+                <a href="Home.html"><p>home</p></a>
+                <a href="Menu.html"><p>menu</p></a>
+                <a href="cart.html"><p>cart</p></a>
+                <a href="contact.html"><p>contactus</p></a>
+                <a href="booktable.html"><p>canteen dining</p></a>
+
+            </div>
+            <div class="last-1">
+                <h4>Exclusive Offers</h4>
+                <p>Foodie Discounts</p>
+                <p>Special-Event-Packages</p>
+                <p>Membership Benefits</p>
+                <p>Early Access to new Recipes</p>
+            </div>
+            <div class=" last-1 last-3">
+                <h3>Contact Us!</h3><br>
+                <span class="email">Email</span>
+                <span class="email-address">rkv@foodie.com</span><br><br>
+                <span class="phone">Phone</span>
+                <span class="phone-number">8688467417</span><br><br>
+                <span class="address">Address</span>
+                <p class="address-value"> <br>Rkv canteen <br> near SuperMarket <br>Quarters road <br>Idupulapaya <br>516330.</p>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <br>
+            <h2>Follow Us</h2><br>
+            <div class="icons">
+                <span><img src="Insta.jpeg" alt=""></span>
+                <span><img src="facebook.png" alt=""></span>
+                <span><img src="twitter.png" alt="">
+                </span>
+            </div>
+            <p style="font-size: 14px;">Stay connected with us on social media for the latest updates, recipes, and foodie adventures.</p>
+        </div>
+    </footer>
+    <!-- <script>
+        function addToCart(item, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ item, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(item + ' added to cart!');
+        }
+    </script> -->
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(itemName, price) {
+            const item = cart.find(i => i.name === itemName);
+            if (item) {
+                item.quantity++;
+            } else {
+                cart.push({ name: itemName, price: price, quantity: 1 });
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            console.log(cart);
+            alert(itemName + ' added to cart!');
+        }
+    </script>
+</body>
+</html>

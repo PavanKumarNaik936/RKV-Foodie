@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Basic reset to remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:maroon;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #1a1717;
+}
+body{
+            padding: 0px;
+            box-sizing: border-box;
+            margin: auto;
+            width: 100%;
+            height: 3300px;
+            background-color: rgb(194, 203, 203);
+        }
+        .bg{
+            width: 1350px;
+            height: 615px;
+            background-image:url("home.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .title{
+            text-align: center;
+            padding-top: 200px;
+            color:white;
+        }
+        .heading{
+            font-size: 100px;
+        }
+        .content{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .order button{
+            background-color: maroon;
+            color: bisque;
+            border: 2px solid rgb(214, 209, 209);
+            height: 40px;
+            width: 140px;
+            padding: 2px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .order button:hover{
+            color: maroon;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            background-color: #fff;
+        }
+        .order{
+            padding-left: 600px;
+            padding-top: 40px;
+        }
+        
+        .offer{
+            height: 50px;
+            color: blanchedalmond;
+            background-color: rgb(154, 6, 6);
+            text-align: center;
+            font-size: 20px;
+            
+            
+        }
+        .offer h2{
+            padding-top: 10px;
+        }
+        .empty{
+            height: 300px;
+        }
+        .quote{
+            font-size: 28px;
+            text-align: center;
+            padding: 60px;
+            color: rgb(156, 2, 2);
+        }
+        .Grid-1{
+            height: 500px;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+        .Grid-1 div{
+            background-color: rgb(243, 238, 238);
+            height: 400px;
+            width: 350px;
+            padding-left: 10px;
+            border-radius: 15px;
+            padding-top: 15px;
+            border: 2px solid rgb(193, 7, 7);
+            text-align: center;
+            transition: transform 0.7s ease-in-out;
+        }
+        .Grid-1 div:hover{
+            transform: scale(1.05);
+            border: 2.5px solid rgb(193, 7, 7);
+        }
+      
+        .Grid-1 div img{
+            height: 200px; width: 310px; 
+        }
+        .bg2{
+            height: 500px;
+            width: 1350px;
+            background-image: url("9.jpeg");
+
+        }
+        .bg2{
+            display: flex;
+        }
+        .T1{
+            height: 500px;
+            width: 450px;
+            /* background-color: aqua; */
+            color: #fff;
+            padding-left: 50px;
+            padding-top: 70px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .T2{
+            /* background-color: aqua; */
+            height: 500px;
+            width: 430px;
+            padding-left: 100px;
+            padding-top: 270px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            
+        }
+        .T3{
+            /* background-color: aqua; */
+            height: 500px;
+            width: 430px;
+            padding-left: 100px;
+            padding-top: 270px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .T3 button{
+            padding: 10px;
+            height: 45px;
+            width: 220px;
+            background-color: rgb(158, 0, 0);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .T2 button{
+            padding: 10px;
+            height: 45px;
+            width: 220px;
+            background-color: hsl(0, 100%, 31%);
+            border: 2px solid #fff;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .b:hover{
+            background-color: #fff;
+            border: 2px solid hsl(0, 100%, 31%);
+            color: hsl(0, 100%, 31%);
+        }.quote-2{
+            padding-top: 100px;
+            padding-left: 100px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .quote-2-1{
+            padding-left: 30px;
+            padding-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(161, 5, 5);
+        }
+        .b4{
+            padding-left: 600px;
+            padding-top: 70px;
+            
+        }
+        .b4 button{
+            background-color: rgb(196, 6, 6);
+            height: 40px;
+            width: 140px;
+            border-radius: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+        .b4 button:hover{
+            color: rgb(180, 5, 5);
+            background-color: #fff;
+            border: 2px solid #9b0707;
+        }.images{
+            /* background-color: #9b0707; */
+            height: 600px;
+            width: 1350px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .images div img{
+            height: 270px;
+            width: 400px;
+            border-radius: 15px;
+            transition: transform 0.5s ease-out;
+        }
+        .images div img:hover{
+            
+            transform: scale(1.08);
+        }
+        .footer1{
+            background-color: #b92929;
+            width: 1350px;
+            height: 250px;
+            display: flex;
+        }
+        .last-1{
+            width: 450px;
+            /* background-color: aqua; */
+            padding-left: 150px;
+            padding-top: 50px;
+            color: rgb(208, 199, 199);
+        }
+        .last-1 p{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        .last-1 h4{
+            font-size: 18px;
+        }
+        .footer2{
+            height: 150px;
+            background-color: #741616;
+            text-align: center;
+            color: #fff;
+        }
+        .footer2 h2{
+            font-size: 20px;
+        }
+        .icons{
+            height: 55px;
+            width: 1350px;
+            /* background-color: aqua; */
+        }
+        .icons img{
+            height: 40px;
+            width: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(208, 201, 201);
+        }
+        .email{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address{
+            font-weight: bold;
+            padding-right: 30px;
+        }
+        .address-value{
+            padding-left: 80px;
+            position: relative;
+            top: -30px;
+        }
+        .phone{
+            font-weight: bold;
+            padding-right: 30px;
+            
+        }
+        /* drop down menu */
+        /* Add this CSS to style the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding-right: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 1; /* Ensure dropdown is on top of other elements */
+}
+
+.dropdown-content span,
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5a5a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dropdown-content span:first-child {
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #453e3e;
+    color: #e7e2e2;
+    
+}
+.dropdown-content img{
+    height: 50px;
+    width: 100px;
+    padding-left: 20px;
+}
+
+
+/*.roboto-slab-h1{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.content{
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+h1{
+    font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+   
+}
+.titillium-web-bold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .playwrite-pt-h1 {
+  font-family: "Playwrite PT", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+ES:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+ES:wght@100..400&family=Playwrite+PT:wght@100..400&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+ES:wght@100..400&family=Playwrite+PT:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RKV Foodie</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RKV Foodie</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <!-- Add a dropdown menu for user details -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">User Details</a>
+                    <div class="dropdown-content">
+                        <p style="padding-left: 25px;">Welcome Pavan
+                            <?php 
+                            session_start();
+                            if(isset($_SESSION['username']))
+                            {
+                            echo $_SESSION['username']; 
+                            }
+                            else{echo " pavan";}
+                            ?>
+                        </p> 
+
+                        <img src="user.png" alt="">
+                       
+                        <!-- Assuming $username contains the user's name -->
+                        <p style="text-align: center; width: 120px;"><a href="logout.php">Logout</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="bg">
+        <div class="title">
+            <h1 class="heading">RKV FOODIE</h1>
+            <p class="content">A place with plethora of flavours from different regions be it our country or abroad can be enjoyed,<br> where we try to make your dining experience memorable with tech facilities and customisation and leave an expression which will bring you back to us.</p>
+        </div>
+        <div class="order">
+            <a href="Menu.html"><button>ORDER NOW</button></a>
+        </div>
+        <div class="empty"></div>
+        <div class="offer">
+        <marquee behavior="" direction=""><h2>Get 30% OFF on your first order!</h2></marquee>
+        </div>
+        <div class="quote">
+            <h2>"Savor the Flavors: Discover What Sets Our Restaurant's Cuisine Apart!"</h2>
+        </div>
+        <div class="Grid-1">
+            <div class="i">
+                <img src="6.jpg" alt="">
+                <h1 style="font-size: 29px;">Authentic Indian Flavors</h1>
+                <br>
+
+                <p style="font-size: 18px; font-weight: 900px;">From aromatic curries to flavorful biryanis, our menu showcases the diversity and deliciousness of Indian cuisine.</p>   
+            </div>
+            <div class="i">
+                <img src="4.jpg" alt="">
+                <h1 style="font-size: 29px;">Tech-Infused Dining Experience</h1>
+                <p style="font-size: 18px; font-weight: 900px;">Customers can use apps to place orders, customize their dishes, and even provide feedback, making their visit more convenient and interactive.</p>
+            </div>
+            <div class="i">
+                <img src="8.jpg" alt="">
+                <h1 style="font-size: 29px;">Innovative Fusion Dishes</h1>
+                <p style="font-size: 18px; font-weight: 900px;">The combinations of Indian and international cuisines not only tantalize taste buds but also provide unique experience.</p>
+            </div>
+        </div>
+        <div class="bg2">
+                <div class="T1">
+                        <h1> Bringing <br>
+                            happiness <br>
+                            to you</h1>
+                            
+                        
+                            <p class="content"style="font-size: 19px;">
+                                Food is more than sustenance; it's a source of pure
+                                happiness. From the first bite of a favorite childhood dish
+                                to the thrill of discovering new flavors, food has a unique
+                                way of filling our hearts with joy.
+                            </p>
+                </div>
+                <div class="T2">
+                    <span >Online Delivery</span><br>
+                    <div style="width: 30px; height: 15px; "></div>
+                    <a href="Menu.html"><button class="b">Order Online</button></a>
+                    
+                </div>
+                <div class="T3">
+                    <span>Canteen Dining</span><br>
+                    <div style="width: 30px; height: 15px; "></div>
+                    <a href="booktable.html"><button class="b">Book Table</button></a>
+                </div>
+                
+        </div>
+        <h1 class="quote-2">"Get ready to explore our delicious range of dishes!"
+        </h1>
+        <p class="quote-2-1">"Welcome to a world of culinary delights where every bite tells a flavorful story. Explore our diverse menu and savor the essence of exquisite dining."</p>
+        <div class="b4"><a href="Menu.html"><button >View Menu</button></a></div><br><br>
+        <div class="images">
+            <div class="1"><img src="2.jpg" alt=""></div>
+            <div class="1"><img src="3.jpg" alt=""></div>
+            <div class="1"><img src="4.jpg" alt=""></div>
+            <div class="1"><img src="5.jpg" alt=""></div>
+            <div class="1"><img src="6.jpg" alt=""></div>
+            <div class="1"><img src="7.jpg" alt=""></div>
+            
+        </div>
+        <footer>
+        <div class="footer1">
+            <div class="last-1">
+                <h4>Our Pages</h4>
+                <a href="Home.html"><p>home</p></a>
+                <a href="Menu.html"><p>menu</p></a>
+                <a href="cart.html"><p>cart</p></a>
+                <a href="contact.html"><p>contact us</p></a>
+                <a href="booktable.html"><p>canteen dining</p></a>
+
+            </div>
+            <div class="last-1">
+                <h4>Exclusive Offers</h4>
+                <p>Foodie Discounts</p>
+                <p>Special-Event-Packages</p>
+                <p>Membership Benefits</p>
+                <p>Early Access to new Recipes</p>
+            </div>
+            <div class=" last-1 last-3">
+                <h3>Contact Us!</h3><br>
+                <span class="email">Email</span>
+                <span class="email-address">rkv@foodie.com</span><br><br>
+                <span class="phone">Phone</span>
+                <span class="phone-number">8688467417</span><br><br>
+                <span class="address">Address</span>
+                <p class="address-value"> <br>Rkv canteen <br> near SuperMarket <br>Quarters road <br>Idupulapaya <br>516330.</p>
+                
+            </div>
+        </div>
+        <div class="footer2">
+            <br>
+            <h2>Follow Us</h2><br>
+            <div class="icons">
+                <span><img src="Insta.jpeg" alt=""></span>
+                <span><img src="facebook.png" alt=""></span>
+                <span><img src="twitter.png" alt="">
+                </span>
+            </div>
+            <p style="font-size: 14px;">Stay connected with us on social media for the latest updates, recipes, and foodie adventures.</p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        let cart = [];
+        let total = 0;
+    
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            total += price;
+            updateCart();
+        }
+    
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            cart.forEach(cartItem => {
+                const li = document.createElement('li');
+                li.textContent = `${cartItem.item} - $${cartItem.price}`;
+                cartItems.appendChild(li);
+            });
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
